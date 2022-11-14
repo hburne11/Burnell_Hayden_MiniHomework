@@ -1,0 +1,47 @@
+.lightbox {
+    // display: none;
+  
+    width: 100vw;
+    height: 50vh;
+  
+    position: relative;
+    left: 50;
+    top: 50;
+  
+    background-image: url('../images/PHEV.png');
+    background-repeat: no-repeat;
+  
+
+    background-position: 200px top;
+    background-size: 28vh;
+  
+    z-index: 5000;
+}
+
+.lightbox_close { 
+    position: relative; 
+    top: 20px;
+    left: 95%;
+    cursor: pointer;
+  
+    width: 25px;
+  }
+  
+  .lightbox_close:hover { 
+    opacity: 0.7; 
+    transform: scale(-1, 1); 
+  }
+  
+  .lightbox article { 
+    width: 55%; 
+    margin-left: 40%;
+    padding-top: 50px;
+  }
+  
+  .lb_text, .lb_heading { text-align: left; }
+  
+  .lb_text { 
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+  }

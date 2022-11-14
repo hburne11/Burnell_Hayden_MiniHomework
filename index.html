@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official MINI | Canada</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <div class="head"></div>
+    <header>
+        <a href="index.html">
+        <img src="images/logo.png" alt="my logo" class="logo" >
+        </a>
+        <img src="images/header.PNG" alt="header" class="header">
+    </header>
+</div>
+<div class="slider--container">
+    <div class="slider--heading">
+        <h1 class="">Welcome to MINI. <br> Let the Fun Begin.</h1>
+        
+    </div>
+    <img class="slider--image" src="images/shadow.png" alt="shadow" />
+    <img class="slider--image" src="images/shadow_header.png" alt="shadow_header" />
+    <img class="slider--image" src="images/untamed.png" alt="untamed" />
+</div>
+
+    <main id="app">
+        <nav id="character-nav">
+            <ul class="characters">
+                <!-- hero thumb component goes here -->
+                <theherothumb @loadlbdata="loadLightbox" v-for="hero in heroData" :hero="hero"></theherothumb> <!-- dont forget the v-for -->
+            </ul>
+        </nav>
+
+        <article>
+            <h3>Choose Your Hero!</h3>
+            <p>Use your mouse to hover / click to discover more about each Marvel character</p>
+        </article>
+
+        <!-- custom lightbox goes here-->
+        <thelightbox @closelb="this.showLB = false" v-if="showLB" :hero="lightboxData"></thelightbox> <!--use in mini homework-->
+        <!-- end lightbox here-->
+    </main>
+    <!-- make this a sticky footer so it's always at the bottom-->
+    <footer class="sticky_footer">
+    </footer>
+
+    <!-- lightbox component goes here -->
+
+    <!-- end lightbox component -->
+    
+    <!-- load script tags at the bottom -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="js/main.js" type="module" defer></script>
+</body>
+</html>

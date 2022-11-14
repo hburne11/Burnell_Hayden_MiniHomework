@@ -1,0 +1,54 @@
+#character-nav { 
+    text-align: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  
+  .characters { list-style-type: none; }
+  
+  .characters li { 
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 350px;
+    width: 500px;
+    margin: 10px 50px;
+    
+    text-align: left;
+    overflow: hidden;
+  
+    /* border: thin dashed white; */
+  }
+  
+  .characters li h5 {
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    padding: 14px 8px; 
+    position: relative; 
+    z-index: 50; 
+
+  }
+  
+  .characters li h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: blue;
+    text-align: center;
+
+  }
+  
+  .characters li a {
+    text-decoration: none;
+  }
+
+ 
+  .sprite { 
+    width: 150px;
+    height: 150px;
+
+    background-color: #333;
+  }
+
+  .characters img:hover {
+    opacity: 0.7;
+  }

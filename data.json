@@ -1,0 +1,18 @@
+{
+    "Countryman": {
+        "name":"MINI COUNTRYMAN HYBRID SUV",
+        "desc":"The best of every world, combining fuel and electric power with ample cabin and cargo room.",
+        "biopic":"PHEV.png"
+    },
+    "3Door": {
+        "name":"MINI 3 DOOR",
+        "desc":"The original icon that started it all.",
+        "biopic":"F55-S.png"
+    },
+    "5Door": {
+        "name":"MINI 5 DOOR",
+        "desc":"The iconic MINI with extra room, for those who lead a slightly fuller life.",
+        "biopic":"F56-S.png"
+    }
+   
+  }
