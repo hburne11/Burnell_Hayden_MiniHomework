@@ -14,14 +14,13 @@
 </head>
 
 <body>
-    <div class="head"></div>
     <header>
         <a href="index.html">
         <img src="images/logo.png" alt="my logo" class="logo" >
         </a>
         <img src="images/header.PNG" alt="header" class="header">
     </header>
-</div>
+
 <div class="slider--container">
     <div class="slider--heading">
         <h1 class="">Welcome to MINI. <br> Let the Fun Begin.</h1>
@@ -41,15 +40,15 @@
         </nav>
 
         <article>
-            <h3>Choose Your Hero!</h3>
-            <p>Use your mouse to hover / click to discover more about each Marvel character</p>
+            <h3>2023 Models</h3>
+            <p>Click on each car for more information on our upcoming models!</p>
         </article>
 
         <!-- custom lightbox goes here-->
-        <thelightbox @closelb="this.showLB = false" v-if="showLB" :hero="lightboxData"></thelightbox> <!--use in mini homework-->
+        <thelightbox @closelb="this.showLB = false" v-if="showLB" :hero="lightboxData"></thelightbox> 
         <!-- end lightbox here-->
     </main>
-    <!-- make this a sticky footer so it's always at the bottom-->
+    
     <footer class="sticky_footer">
     </footer>
 
