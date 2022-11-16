@@ -13,7 +13,7 @@ export default{
         
         <h5>{{hero.name}}</h5>
         
-        <p>{{hero.desc}}</p>
+        <p class="desc">{{hero.desc}}</p>
        
        
     </li>
