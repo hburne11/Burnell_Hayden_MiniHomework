@@ -21,7 +21,7 @@ import LightBox from './components/TheLightbox.js';
         data() {
             return {
                 heroData: {},
-                lbData: {},
+                lightboxData: {},
                 showLB: false
 
             }

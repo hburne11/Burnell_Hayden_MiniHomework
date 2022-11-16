@@ -9,7 +9,7 @@ export default{
 
     template: `
     <li @click="loadLBData">
-        <img :src='"images/" + hero.biopic' alt="hero image" style="width: 450px">
+        <img :src='"images/" + hero.biopic' alt="hero image" style="width: 450px" class="img">
         
         <h5>{{hero.name}}</h5>
         

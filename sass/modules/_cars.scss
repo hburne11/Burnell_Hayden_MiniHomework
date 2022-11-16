@@ -14,11 +14,12 @@
     cursor: pointer;
     height: 350px;
     width: 500px;
-    margin: 10px 50px;
-   
-    text-align: left;
+    text-align: center;
     overflow: hidden;
-  
+  }
+
+  .hero{
+
    
   }
   
@@ -48,6 +49,9 @@
     text-decoration: none;
   }
 
+  .img{
+    width: 50px;
+  }
  
   .sprite { 
     width: 150px;
