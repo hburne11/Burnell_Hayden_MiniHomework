@@ -32,20 +32,22 @@
 </div>
 
     <main id="app">
+        <article>
+            <h3>2023 Models</h3>
+            <p>Click on each car for more information on our upcoming models!</p>
+        </article>
         <nav id="character-nav">
             <ul class="characters">
+                
                 <!-- hero thumb component goes here -->
                 <theherothumb @loadlbdata="loadLightbox" v-for="hero in heroData" :hero="hero"></theherothumb> <!-- dont forget the v-for -->
             </ul>
         </nav>
 
-        <article>
-            <h3>2023 Models</h3>
-            <p>Click on each car for more information on our upcoming models!</p>
-        </article>
+      
 
         <!-- custom lightbox goes here-->
-        <thelightbox @closelb="this.showLB = false" v-if="showLB" :hero="lightboxData"></thelightbox> 
+        <thelightbox @closelb="this.showLB = false" v-if="showLB":hero="lightboxData"></thelightbox> 
         <!-- end lightbox here-->
     </main>
     

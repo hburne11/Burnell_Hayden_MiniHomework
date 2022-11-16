@@ -4,8 +4,10 @@ import LightBox from './components/TheLightbox.js';
 
 
 (() => {
+    
     // create vue instance here
     const { createApp } = Vue
+  
 
     createApp({
         created() {
@@ -43,3 +45,6 @@ import LightBox from './components/TheLightbox.js';
         }
     }).mount('#app')
 })()
+
+
+
