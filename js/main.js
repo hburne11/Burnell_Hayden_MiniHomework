@@ -34,8 +34,9 @@ import LightBox from './components/TheLightbox.js';
 
         methods: {
             loadLightbox(hero){
+                debugger;
                 //set the lightbox data / render it
-               this.lbData = hero;
+               this.lightboxData = hero;
 
                //show the lightbox
                 this.showLB = true;
