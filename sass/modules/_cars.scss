@@ -1,13 +1,13 @@
-#character-nav { 
+#car-nav { 
     text-align: center; 
     background-repeat: no-repeat;
     background-size: cover;
     background-blend-mode: overlay;
   }
   
-  .characters { list-style-type: none; }
+  .cars { list-style-type: none; }
   
-  .characters li { 
+  .cars li { 
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -21,7 +21,7 @@
     /* border: thin dashed white; */
   }
   
-  .characters li h5 {
+  .cars li h5 {
     /* font-family: 'Roboto Condensed', sans-serif; */
     padding: 14px 8px; 
     position: relative; 
@@ -29,7 +29,7 @@
 
   }
   
-  .characters li h5 {
+  .cars li h5 {
     font: 20px 'Raleway', Arial, serif;
     font-weight: bold;
     color: black;
@@ -37,7 +37,7 @@
 
   }
   
-  .characters li a {
+  .cars li a {
     text-decoration: none;
   }
 
@@ -48,6 +48,6 @@
 
   }
 
-  .characters img:hover {
+  .cars img:hover {
     opacity: 0.7;
   }
