@@ -7,12 +7,12 @@
     position: relative;
     left: 50;
     top: 50;
-  
+    margin-top: 40px;
     background-repeat: no-repeat;
   
 
     background-position: 200px top;
-    background-size: 28vh;
+    background-size: 70vh;
   
     z-index: 5000;
 }
@@ -34,8 +34,8 @@
   
   .lightbox article { 
     width: 55%; 
-    margin-left: 50%;
-    padding-top: 30px;
+    margin-left: 52%;
+    padding-top: 20px;
   }
   
   .lb_text, .lb_heading { text-align: left; }
@@ -49,4 +49,5 @@
     color: black;
 
   }
- 
+
+  

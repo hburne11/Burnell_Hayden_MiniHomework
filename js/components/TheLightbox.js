@@ -6,7 +6,7 @@ export default {
     //emits: ['closelightbox'],
 
     template: `
-    <section class="lightbox" :style="{ 'background-image': 'url(../images/' + hero.lbBG + ')' }">
+    <section class="lightbox"  :style="{ 'background-image': 'url(../images/' + hero.lbBG + ')' }">
         <img @click="closeLB" src="images/closeIcon.png" class="lightbox_close">
          <!-- hero image on the left, text on the right -->
          
