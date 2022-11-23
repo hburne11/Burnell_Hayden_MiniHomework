@@ -34,7 +34,7 @@ import LightBox from './components/TheLightbox.js';
 
         methods: {
             loadLightbox(hero){
-                debugger;
+                console.log("It's working when you click, woot woot."); //shows in the console
                 //set the lightbox data / render it
                this.lightboxData = hero;
 

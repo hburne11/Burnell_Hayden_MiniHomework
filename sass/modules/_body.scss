@@ -7,8 +7,8 @@ body {
 
 .slider--container {
 	position: relative; /* "relative", so that h1 and images can be set absolutely */
-	height: 90vh; /* Adjust the height to your needs here */
-	width: 100%; /* Adjust the width to your needs here */
+	height: 90vh; 
+	width: 100%; 
 	margin: 0 auto;
 	overflow: hidden;
 	border-radius: .125rem;
@@ -83,7 +83,7 @@ body {
 	object-fit: cover;
 	animation: 12s ease-in infinite;
 } 
- /* Name of animations and selection of images */
+
 .slider--image:nth-of-type(1) {
 	animation-name: slide-01;
 }
@@ -94,9 +94,7 @@ body {
 	animation-name: slide-03;
 }
 
-/* Images are overlaid and visible or invisible due to different transparency */
-/* Moving the images with transform: scale & translate */
-	/* Styles for webkit browsers */
+	
 @-webkit-keyframes slide-01 {
 	0%  { opacity:1; -webkit-transform: scale(1.4) translate(0, 0);}
 	16%  {opacity:1; -webkit-transform: scale(1.2) translate(-20px, -10px);}
@@ -125,7 +123,6 @@ body {
 	100%  {opacity:0; -webkit-transform: scale(1.4) translate(0, 0);}
 }
 
-	/* Styles for all other browsers */
 @keyframes slide-01 {
 	0%  { opacity:1; transform: scale(1.4) translate(0, 0);}
 	16%  {opacity:1; transform: scale(1.2) translate(-20px, -10px);}
