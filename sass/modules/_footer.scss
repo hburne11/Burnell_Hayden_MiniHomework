@@ -1,0 +1,31 @@
+.sticky_footer{
+    margin-top: 50px;
+    font-weight: 300;
+    display: flex;
+    justify-content: space-evenly;
+    background: silver;
+    
+  }
+
+  .contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    border-radius: 88px;
+    color: silver;
+    list-style-type: none;
+  }
+
+  .contact-links i{
+      color: black;
+  }
+  
+  .contact-links i:hover{
+      color: white;
+      opacity: 0.8;
+  }

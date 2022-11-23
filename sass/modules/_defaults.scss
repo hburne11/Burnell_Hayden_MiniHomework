@@ -1,0 +1,51 @@
+.hidden { display: none; }
+
+html, body { height: 100% }
+
+body { 
+  font-family: sans-serif;
+  background-color: white;
+  color: white;
+}
+
+
+
+
+article {
+    background-color: white;
+  }
+  
+  article h3 { 
+    font-size: 2em; 
+    text-align: center; 
+    margin-bottom: 14px; 
+    color: black;
+    font: 28px 'Raleway', Arial, serif;
+    font-weight: bolder;
+
+  }
+  
+  article p { 
+    font: 20px 'Raleway', Arial, serif;
+
+    width: 80%; 
+    font-size: 18px; 
+    line-height: 1.2; 
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+  }
+  
+  footer { 
+    color: white;
+    padding: 20px 0;
+    text-align: center; 
+  }
+  
+  .sticky_footer {
+    position: sticky;
+    top: 100%;
+  
+  }
+
+  

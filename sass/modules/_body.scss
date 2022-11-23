@@ -1,0 +1,152 @@
+body {
+	min-width: 1500px;
+	margin: 0 auto;
+
+	font-family: sans-serif;
+}
+
+.slider--container {
+	position: relative; /* "relative", so that h1 and images can be set absolutely */
+	height: 90vh; 
+	width: 100%; 
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: .125rem;
+	box-shadow: 0 0 .1rem .125rem rgba(0, 0, 0, 0.25);
+	margin-bottom: 50px;
+}
+
+.slider--heading {
+	position: absolute;
+	top: 30%;
+	left: 20%;
+	padding: 4rem;
+	z-index: 99;
+    opacity: 0.8;
+	font: 300 1.25rem/1.25 "Raleway", sans-serif;
+	text-align: center;
+	background-color: navy;
+	color: rgba(0, 0, 0, 0.5);
+	transform: translate3d(-50%, -50%, 0);
+}
+.slider--heading h1 {
+	font: 300 1.75rem/1.75 "Raleway", sans-serif;
+	text-transform: uppercase;
+	color: white;
+}
+	/* Responsive styles for the heading */
+	/* ===== == = === 30em (480px) === = == ===== */
+	@media only screen and (min-width : 30em) {
+		.slider--heading h1 {font-size: 1.5rem;}
+	}
+	/* ===== == = === 48em (768px) === = == ===== */
+	@media only screen and (min-width : 48em) {
+		.slider--heading h1 {font-size: 1.75rem;}
+	}
+
+.btn {
+	margin: 1rem;
+	padding: .5rem;
+	font-size: .75rem;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #999999;
+	background: transparent;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 1px #EFEFEF;
+	color: #333;
+}
+	/* Responsive styles for the button */
+	/* ===== == = === 30em (480px) === = == ===== */
+	@media only screen and (min-width : 30em) {
+		.btn {
+			font-size: 1rem;
+		}
+	}
+	/* ===== == = === 48em (768px) === = == ===== */
+	@media only screen and (min-width : 48em) {
+		.btn {
+			font-size: 1.25rem;
+		}
+	}
+.btn:hover {
+	text-decoration: none;
+	color: #999;
+}
+
+.slider--image {
+	position: absolute;
+	z-index: 1;
+	left:0;
+	top:0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	animation: 12s ease-in infinite;
+} 
+
+.slider--image:nth-of-type(1) {
+	animation-name: slide-01;
+}
+.slider--image:nth-of-type(2) {
+	animation-name: slide-02;
+}
+.slider--image:nth-of-type(3) {
+	animation-name: slide-03;
+}
+
+	
+@-webkit-keyframes slide-01 {
+	0%  { opacity:1; -webkit-transform: scale(1.4) translate(0, 0);}
+	16%  {opacity:1; -webkit-transform: scale(1.2) translate(-20px, -10px);}
+	33%  {opacity:0; -webkit-transform: scale(1.4) translate(0, 0);}
+	50%  {opacity:0;}
+	67%  {opacity:0;}
+	84%  {opacity:0;}
+	100%  {opacity:1; -webkit-transform: scale(1.4) translate(0, 0);}
+}
+@-webkit-keyframes slide-02 {
+	0%  { opacity:0;}
+	16%  {opacity:0; -webkit-transform: scale(1.2) translate(-20px, -10px);}
+	33%  {opacity:1; -webkit-transform: scale(1.4) translate(0, 0);}
+	50%  {opacity:1; -webkit-transform: scale(1.2) translate(-20px, 10px);}
+	67%  {opacity:0; -webkit-transform: scale(1.4) translate(0, 0);}
+	84%  {opacity:0;}
+	100%  {opacity:0;}
+}
+@-webkit-keyframes slide-03 {
+	0%  { opacity:0;}
+	16%  {opacity:0;}
+	33%  {opacity:0;}
+	50%  {opacity:0; -webkit-transform: scale(1.4) translate(0, 0);}
+	67%  {opacity:1; -webkit-transform: scale(1.4) translate(-20px, 10px);}
+	84%  {opacity:1; -webkit-transform: scale(1.2) translate(20px, -10px);}
+	100%  {opacity:0; -webkit-transform: scale(1.4) translate(0, 0);}
+}
+
+@keyframes slide-01 {
+	0%  { opacity:1; transform: scale(1.4) translate(0, 0);}
+	16%  {opacity:1; transform: scale(1.2) translate(-20px, -10px);}
+	33%  {opacity:0; transform: scale(1.4) translate(0, 0);}
+	50%  {opacity:0;}
+	67%  {opacity:0;}
+	84%  {opacity:0;}
+	100%  {opacity:1; transform: scale(1.4) translate(0, 0);}
+}
+@keyframes slide-02 {
+	0%  { opacity:0;}
+	16%  {opacity:0; transform: scale(1.2) translate(-20px, -10px);}
+	33%  {opacity:1; transform: scale(1.4) translate(0, 0);}
+	50%  {opacity:1; transform: scale(1.2) translate(-20px, 10px);}
+	67%  {opacity:0; transform: scale(1.4) translate(0, 0);}
+	84%  {opacity:0;}
+	100%  {opacity:0;}
+}
+@keyframes slide-03 {
+	0%  { opacity:0;}
+	16%  {opacity:0;}
+	33%  {opacity:0;}
+	50%  {opacity:0; transform: scale(1.4) translate(0, 0);}
+	67%  {opacity:1; transform: scale(1.4) translate(-20px, 10px);}
+	84%  {opacity:1; transform: scale(1.2) translate(20px, -10px);}
+	100%  {opacity:0; transform: scale(1.4) translate(0, 0);}
+}
