@@ -1,0 +1,12 @@
+SELECT media_name, media_location FROM tbl_media WHERE media_location LIKE "%header%"- show which images are in the header slideshow
+SELECT media_name, media_location FROM tbl_media WHERE media_location LIKE "%hero%" - show which images are in the hero section
+SELECT media_name, media_location FROM tbl_media WHERE media_location LIKE "%lightbox%" - show which images are in the lightbox section
+
+SELECT media_name FROM tbl_media WHERE media_type LIKE "%png%" - show images that are .png format
+
+SELECT vehicle_name FROM tbl_vehicles WHERE vehicle_price < "$40,000" - show vehicles under 40k in price
+SELECT vehicle_name FROM tbl_vehicles WHERE vehicle_price > "$40,000" - show vehicles over 40k in price
+
+SELECT feature_vehicle, feature_name, feature_desc FROM tbl_features WHERE feature_vehicle LIKE "%MINI COUNTRYMAN%";- display the countryman vehicles features only
+SELECT feature_vehicle, feature_name, feature_desc FROM tbl_features WHERE feature_vehicle LIKE "%MINI 3DOOR%";- display the 3door vehicles features only
+SELECT feature_vehicle, feature_name, feature_desc FROM tbl_features WHERE feature_vehicle LIKE "%MINI 5DOOR%";- display the 5door vehicles features only
